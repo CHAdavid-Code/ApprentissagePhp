@@ -15,7 +15,7 @@
     <h1>Les Exercices</h1>
     <h2>les exercices en php</h2>
     <p>1.premier exercice:si vous voyez ce site, c'est que c'est fait</p>
-    <p>2.<a href="/exercices2.php">Exercice 2</a>: décocer des chaînes de caratère
+    <p>2.<a href="/exo2.php">Exercice 2</a>: décoder des chaînes de caractère
 </div>
 <script src="/js/bootstrap.bundle.min.js"></script>
 </html>
