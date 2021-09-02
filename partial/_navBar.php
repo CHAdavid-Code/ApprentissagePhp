@@ -21,7 +21,9 @@
         <li class="nav-item active">
           <a class="nav-link" href="/notes.php">notes</a>
         </li>
-        
+        <li class="nav-item active">
+          <a class="nav-link" target="_blank" href="https://github.com/CHAdavid-Code/ApprentissagePhp">Git</a>
+        </li>
         </li>
       </ul>
     </div>

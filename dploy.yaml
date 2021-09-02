@@ -1,0 +1,12 @@
+dev:
+    scheme: ftp
+    host: ftp.cluster029.hosting.ovh.net
+    port: 21
+    user: knadhxw
+    pass: TVNCP8S32KFZ
+    check: true
+    exclude: ["dploy.yaml", ".gitignore"]
+    path:
+        local: 
+        remote: /www
+
