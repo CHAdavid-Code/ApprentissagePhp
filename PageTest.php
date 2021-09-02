@@ -12,7 +12,36 @@
   <div class="container">
 
     <h1>Page de test Php</h1>
-    <p>php tests</p>
+
+    <pre>
+    résultats php
+    ===================================================================
+
+
+
+
+
+
+
+
+
+    <?php
+    
+    
+    
+    
+?>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    =========================================================================
+    </pre> 
 </div>
 <script src="/js/bootstrap.bundle.min.js"></script>
 </body>

@@ -14,7 +14,8 @@
 
     <h1>Les Exercices</h1>
     <h2>les exercices en php</h2>
-    <p>1. premier exo</p>
+    <p>1.premier exercice:si vous voyez ce site, c'est que c'est fait</p>
+    <p>2.<a href="/exercices2.php">Exercice 2</a>: décocer des chaînes de caratère
 </div>
 <script src="/js/bootstrap.bundle.min.js"></script>
 </html>
