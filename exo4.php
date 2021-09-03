@@ -25,9 +25,9 @@
     
     for ($i = 0; $i < $sizeAlphabet; $i++) {
         for ($j = 0; $j < $sizeAlphabet; $j++) {
-          $line = $alphabetTab[$i];
-          $column = $alphabetTab[$j];
-          $vigenere[$line] [$column] = $doubleAlphaTab[$j + $i];
+            $line = $alphabetTab[$i];
+            $column = $alphabetTab[$j];
+            $vigenere[$line][$column] = $doubleAlphaTab[$i + $j];
         }
     }
 
@@ -36,16 +36,25 @@
     <?php
     $message = "APPRENDRE PHP EST UNE CHOSE FORMIDABLE";
     $key = "BACKEND";
-    // TO DO
-    $cryptedMessage = $message;
-    /**
-    * astuce pour la rotation de la clé BACKEND
-    * 14 / 7 -> 2
-    * 15 / 7 -> 2 reste 1
-    * pour récuperer le "reste 1" il faut faire un modulo
-    * 15 % 7 -> 1
-    * 176 % 7 -> 1 (25 x 7 et reste 1)
-    */
+    // encode message
+    $messageTab = str_split($message);
+    $keyTab = str_split($key);
+    $keySize = count($keyTab);
+
+    $encodedMessage = [];
+    $keyCounter = 0;
+    foreach ($messageTab as $pointer => $letterToEncode) {
+        $positionKeyLetter = $keyCounter % $keySize;
+        $keyLetter = $keyTab[$positionKeyLetter];
+        if ($letterToEncode != " ") {
+            $encodedMessage[] = $vigenere[$letterToEncode][$keyLetter];
+        } else {
+            $encodedMessage[] = " ";
+    }
+        $keyCounter++;
+    }
+    
+    $cryptedMessage = implode($encodedMessage);
     ?>
     <p>le message est: <?php echo $message; ?></p>
     <p>la clé est: <?php echo $key ?></p>
