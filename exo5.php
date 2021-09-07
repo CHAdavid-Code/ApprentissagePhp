@@ -7,6 +7,7 @@
 <title>Exercice 5</title>
   </head>
   <body>
+  <?php include("./partial/_navBar.php"); ?>
 <div class="container">
     <h1>Exercice 5</h1>
     
