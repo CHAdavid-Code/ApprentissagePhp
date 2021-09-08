@@ -20,6 +20,7 @@
     <p>4.<a href="/exo4.php">Exercice 4</a>: travailler avec des boucles</p>
     <p>5.<a href="/exo5.php">Exercice 5</a>: système d'encodage de vigenère</p>
     <p>6.<a href="/exo6.php">Exercice 6</a>: exercice 6</p>
+    <p>7.<a href="/exo7.php">Exercice 7</a>: programme de codage et décodage suivant divers protocole de cryptage</p>
 </div>
 <script src="/js/bootstrap.bundle.min.js"></script>
 </html>
